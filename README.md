@@ -16,7 +16,7 @@ Problem statement 1:
 Solution:
 	We need to make or train a model which can point out these custom lables from the user query (Named Entity Extraction), which are given in the problem statement.
 As there was no training dataset was provided, I made a small one by myself. But as If I would have made and labeled the training dataset for all the custom lables It would have taken a lot of time, so, really sorry taking time in consideration, I only trained for the LOAN label and labelled some of the   training sentences for that. As shown below:(one more thing in these training examples I forgot to add *get* after *can i* sorry for this mistake, I just realised this while writing this document)
-![results](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/master/result_pics/training_data_prbm1.png)
+![1](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/training_data_prbm1.png)
 
 
 
@@ -27,18 +27,22 @@ As there was no training dataset was provided, I made a small one by myself. But
 From the model, we got results as given below:
 when the query is:
 can i loan for property in philippines?
-![res](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm1_result1.png|alt=octocat)
+![2](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm1_result1.png)
+
 
 
 When the query is:
 can i get the allowance for property in philippines?
-[[https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm1_result2.png|alt=octocat]]
+
+![3](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm1_result2.png)
+
 
 
 When the query is:
 can i get investment for the place in india?
 
-[[https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm_result3.png|alt=octocat]]
+![4](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm_result3.png)
+
 
 Similary tried other queries as well.
 
@@ -84,12 +88,16 @@ The user query is :
 I want to deposit money in my deposit How much deposit i can deposit to my deposit?
 
 And the definitions or contexts of every word deposit we got are:
-[[https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm2_result1.png|alt=octocat]]
+
+![5](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm2_result1.png)
+
 
 
 Approach 2:(in brief)
 	The above query was complex but for simple queries I there is one solution, for that I copied some text regarding about the diffrent context of word deposit and pasted them in a text file.(not relaible but for simple queries it works which are very simple or common.)
-[[https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm2_result_sec.png|alt=octocat]]
+	
+![6](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm2_result_sec.png)
+
 
 Some other approaches for this problem statement I have tried they are all given in the python file.
 
@@ -123,7 +131,9 @@ what I mean:
 	then found which pair is out of the context :
 
 query: i want to connect wife
-[[https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm3_result1.png|alt=octocat]]
+
+![7](https://github.com/vyaslkv/NER-Named-Enitity-Extraction--WSD-Word-Sense-Disambiguation--word_corrector-according-to-domain-/blob/master/result_pics/prblm3_result1.png)
+
 
 I know this is not the good solution, sorry for that.
 
